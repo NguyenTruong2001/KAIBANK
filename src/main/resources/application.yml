@@ -1,70 +1,63 @@
 server:
   servlet:
-    contextPath: /CUSTOMER_API
-  port: 8088
+    contextPath: /T24_API
+  port: 8082
 kai:
-  name: CUSTOMER_API
-  key: custinfoq51klfoni1ezxl5f2ckpfx671
-  threadName: CUSTOMER_API
+  name: T24_API
+  key: VDI0X1VUSUxfQVBJ
+  threadName: T24_API
   pollSize: 100
   error:
-    code996: "Error insert request to DB#{0}"
-    code997: "Cannot be processed"
-    code998: "Timeout {0}"
     code999: "Internal Server Error {0}"
-    code801: "Request type not valid"
-    code802: "Problem with calculating timeout or sendtime in request type 'response'"
-    code803: "RequestId not exist"
-    code804: "Request lacks valid information: {0}"
-    code805: "Problem with command in request type 'request'"
-    code700: "API key not exists"
+    code998: "Timeout {0}"
     code701: "API not exist"
-    code600: "Problem in mapper object"
-    code501: "Failed to insert to the database#{0}"
-    code502: "Failed to update to the database#{0}"
-    code503: "Failed to read from the database#{0}"
-    code504: "Failed to delete from the database#{0}"
-    code505: "Failed to call api#{0}"
-    code333: "Don't have method validate for AuthenType"
+    code700: "API key not exists"
+    code803: "RequestId not exist"
+    code996: "Error insert request to DB#{0}"
+    code804: "Input missing.Field {0} is required"
+    code09: "MISSING FIELD#{0}"
+    code05: "Khong ton tai user tren he thong#{0}"
+    code04: "Sai Password#{0}"
+    code03: "User Expired#{0}"
+    code02: "User Locked#{0}"
+    code01: "Customer Not Found#{0}"
+    code06: "Account Not Found#{0}"
+    code10: "Khong duoc rut qua so du cho phep"
+    code11: "Duplicate Transaction"
+    code12: "Transaction Not Exists#{0}"
+    code13: "Transaction Already Revert#{0}"
 spring:
   application:
-    name: KAIASIA_CUSTOMER
-  config:
-    import: optional:file:application.yml
+    name: T24UTIL
   database:
     postgres: true
-  redis:
-    host: 14.225.254.212
-    port: 6379
-    timeout: 5000
   postgredatasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://14.225.254.212:5432/KAI_API?currentSchema=customerinfo_api
-    username: custinfo_api
-    password: custinfo@kaiasia
+#    url: jdbc:postgresql://14.225.254.212:5432/CORE?currentSchema=core_api
+#    username: t24util
+#    password: t24util@2024
+    url: jdbc:postgresql://localhost:5432/kai_api?currentSchema=t24_api
+    username: postgres
+    password: Truong2001@
     maximum-pool-size: 50
     idleTimeout: 120000
     minimumIdle: 10
   jpa:
     show-sql: false
     open-in-view: false
+eureka:
+  client:
+    service-url:
+      defaultZone: http://14.225.254.212:8761/eureka
 
 dbinfo:
   apiRequest: request_in
   apiResponse: request_out
-dep-api:
-  auth-api:
-    apiName: AUTH_API
-    url: http://14.225.254.212:8087/AUTH_API/process
-    timeout: 60000
-    apiKey: authq51klfoni1ezxl5f2ckpfx248
-  t24utilsApi:
-    apiName: T24_UTIL_API
-    url: http://14.225.254.212:8082/T24_UTIL_API/process
-    timeout: 60000
-    apiKey: VDI0X1VUSUxfQVBJ
-#logging:
-#  file:
-#    name: erro.log
-#  level:
-#    root: error
+  ebank: '"EBANK"'
+  customer: '"CUSTOMER"'
+  account: '"ACCOUNT"'
+  fund_transfer: '"FUND_TRANSFER"'
+  banks: '"bank_code"'
+
+mainBankCode: "300"
+napasNostro: "VN1000001NAPAS"

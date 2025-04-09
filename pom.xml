@@ -10,10 +10,10 @@
         <!-- lookup parent from repository -->
     </parent>
     <groupId>com.kaiasia</groupId>
-    <artifactId>app</artifactId>
-    <version>20241209</version>
-    <name>app</name>
-    <description>CUSTOMER API</description>
+    <artifactId>T24_API</artifactId>
+    <version>20250401</version>
+    <name>T24_API</name>
+    <description>T24 API</description>
     <properties>
         <java.version>1.8</java.version>
         <start-class>com.kaiasia.app.AppApplication</start-class>

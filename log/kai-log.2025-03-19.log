@@ -1,0 +1,935 @@
+19-03-2025 00:28:01.554 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 13016 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 00:28:01.560 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 00:28:01.561 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 00:28:04.530 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 00:28:05.359 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 4.457 seconds (JVM running for 5.599)
+19-03-2025 00:29:57.936 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, accountId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:29:57.942 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:29:57.988 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:29:57.988 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742318997988000_0000_89b927625ab1498d914bc2dba8c4434c#[API-BEGIN]
+19-03-2025 00:29:58.004 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742318997988000_0000_89b927625ab1498d914bc2dba8c4434c#BEGIN
+19-03-2025 00:29:58.014 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742318997988000_0000_89b927625ab1498d914bc2dba8c4434c#END
+19-03-2025 00:29:58.015 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742318997988000_0000_89b927625ab1498d914bc2dba8c4434c##pushApiReqToQueue#Duration:27
+19-03-2025 00:29:58.306 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:29:58.307 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, accountId=CUST001}, status=OK}, _reqId=1742318997988000_0000_89b927625ab1498d914bc2dba8c4434c, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:29:58.307 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:29:58.315 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742318997988000_0000_89b927625ab1498d914bc2dba8c4434c#saveResponse#Duration: 4
+19-03-2025 00:29:58.430 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742318997988000_0000_89b927625ab1498d914bc2dba8c4434c##END
+19-03-2025 00:29:58.430 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742318997988000_0000_89b927625ab1498d914bc2dba8c4434c#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=311, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=01, desc=Customer Not Found#null))#Total time: 494
+19-03-2025 00:34:51.456 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:34:51.457 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:34:51.457 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:34:51.457 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319291457000_0000_a6c325e37444466d97f48216857cd22e#[API-BEGIN]
+19-03-2025 00:34:51.457 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319291457000_0000_a6c325e37444466d97f48216857cd22e#BEGIN
+19-03-2025 00:34:51.459 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319291457000_0000_a6c325e37444466d97f48216857cd22e#END
+19-03-2025 00:34:51.460 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742319291457000_0000_a6c325e37444466d97f48216857cd22e##pushApiReqToQueue#Duration:3
+19-03-2025 00:34:52.101 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:34:52.102 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742319291457000_0000_a6c325e37444466d97f48216857cd22e, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:34:52.102 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:34:52.108 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742319291457000_0000_a6c325e37444466d97f48216857cd22e#saveResponse#Duration: 1
+19-03-2025 00:34:52.264 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319291457000_0000_a6c325e37444466d97f48216857cd22e##END
+19-03-2025 00:34:52.264 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319291457000_0000_a6c325e37444466d97f48216857cd22e#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=1107, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=01, desc=Customer Not Found#CUST001))#Total time: 808
+19-03-2025 00:37:03.646 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 8508 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 00:37:03.648 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 00:37:03.648 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 00:37:05.854 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 00:37:06.514 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.34 seconds (JVM running for 4.164)
+19-03-2025 00:37:15.334 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:37:15.341 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:37:15.384 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:37:15.385 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319435385000_0000_13716a9a77754244a69b3cd8388ce249#[API-BEGIN]
+19-03-2025 00:37:15.402 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319435385000_0000_13716a9a77754244a69b3cd8388ce249#BEGIN
+19-03-2025 00:37:15.411 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319435385000_0000_13716a9a77754244a69b3cd8388ce249#END
+19-03-2025 00:37:15.413 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742319435385000_0000_13716a9a77754244a69b3cd8388ce249##pushApiReqToQueue#Duration:28
+19-03-2025 00:37:15.953 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:37:15.953 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742319435385000_0000_13716a9a77754244a69b3cd8388ce249, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:37:15.953 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:37:15.965 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742319435385000_0000_13716a9a77754244a69b3cd8388ce249#saveResponse#Duration: 3
+19-03-2025 00:37:16.028 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319435385000_0000_13716a9a77754244a69b3cd8388ce249##END
+19-03-2025 00:37:16.028 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319435385000_0000_13716a9a77754244a69b3cd8388ce249#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=962, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=01, desc=Customer Not Found#CUST001))#Total time: 694
+19-03-2025 00:38:08.520 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 14592 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 00:38:08.521 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 00:38:08.521 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 00:38:11.335 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 00:38:12.295 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 4.26 seconds (JVM running for 5.861)
+19-03-2025 00:38:16.540 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:38:16.547 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:38:16.605 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:38:16.606 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319496606000_0000_62d1eba305cb4e77a1988247db713382#[API-BEGIN]
+19-03-2025 00:38:16.634 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319496606000_0000_62d1eba305cb4e77a1988247db713382#BEGIN
+19-03-2025 00:38:16.647 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319496606000_0000_62d1eba305cb4e77a1988247db713382#END
+19-03-2025 00:38:16.649 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742319496606000_0000_62d1eba305cb4e77a1988247db713382##pushApiReqToQueue#Duration:43
+19-03-2025 00:38:16.995 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:38:16.995 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742319496606000_0000_62d1eba305cb4e77a1988247db713382, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:38:16.995 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:41:00.844 ERROR --- [com.kaiasia.app.core.ProcessService     ] - 1742319496606000_0000_62d1eba305cb4e77a1988247db713382#Return timeout, because client get response at time over timeout value
+19-03-2025 00:41:00.845 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319496606000_0000_62d1eba305cb4e77a1988247db713382##END
+19-03-2025 00:41:00.846 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319496606000_0000_62d1eba305cb4e77a1988247db713382#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=998, desc=Timeout {0}))#Total time: 164306
+19-03-2025 00:41:00.856 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742319496606000_0000_62d1eba305cb4e77a1988247db713382#saveResponse#Duration: 6
+19-03-2025 00:41:07.003 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 7280 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 00:41:07.004 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 00:41:07.004 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 00:41:09.632 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 00:41:10.533 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 4.098 seconds (JVM running for 5.152)
+19-03-2025 00:41:15.963 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:41:15.970 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:41:16.028 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:41:16.028 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319676028000_0000_3f9a81cd3d284f5a8c858acd0210c246#[API-BEGIN]
+19-03-2025 00:41:16.051 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319676028000_0000_3f9a81cd3d284f5a8c858acd0210c246#BEGIN
+19-03-2025 00:41:16.062 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319676028000_0000_3f9a81cd3d284f5a8c858acd0210c246#END
+19-03-2025 00:41:16.064 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742319676028000_0000_3f9a81cd3d284f5a8c858acd0210c246##pushApiReqToQueue#Duration:35
+19-03-2025 00:41:16.363 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:41:16.363 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742319676028000_0000_3f9a81cd3d284f5a8c858acd0210c246, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:41:16.363 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:41:37.072 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742319676028000_0000_3f9a81cd3d284f5a8c858acd0210c246#saveResponse#Duration: 5
+19-03-2025 00:41:37.282 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319676028000_0000_3f9a81cd3d284f5a8c858acd0210c246##END
+19-03-2025 00:41:37.282 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319676028000_0000_3f9a81cd3d284f5a8c858acd0210c246#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=21067, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=01, desc=Customer Not Found#CUST001))#Total time: 21319
+19-03-2025 00:41:47.760 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 7804 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 00:41:47.762 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 00:41:47.763 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 00:41:50.060 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 00:41:50.752 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.504 seconds (JVM running for 4.363)
+19-03-2025 00:41:53.685 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:41:53.693 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:41:53.736 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:41:53.736 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319713736000_0000_171612f0b35f49f2b72591766ab5c483#[API-BEGIN]
+19-03-2025 00:41:53.751 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319713736000_0000_171612f0b35f49f2b72591766ab5c483#BEGIN
+19-03-2025 00:41:53.758 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742319713736000_0000_171612f0b35f49f2b72591766ab5c483#END
+19-03-2025 00:41:53.760 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742319713736000_0000_171612f0b35f49f2b72591766ab5c483##pushApiReqToQueue#Duration:24
+19-03-2025 00:41:54.212 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:41:54.212 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742319713736000_0000_171612f0b35f49f2b72591766ab5c483, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:41:54.213 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:41:54.223 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742319713736000_0000_171612f0b35f49f2b72591766ab5c483#saveResponse#Duration: 3
+19-03-2025 00:41:54.388 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319713736000_0000_171612f0b35f49f2b72591766ab5c483##END
+19-03-2025 00:41:54.388 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742319713736000_0000_171612f0b35f49f2b72591766ab5c483#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=220, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=01, desc=Customer Not Found#CUST001))#Total time: 703
+19-03-2025 00:49:26.412 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 5128 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 00:49:26.414 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 00:49:26.414 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 00:49:28.575 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 00:49:29.253 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.311 seconds (JVM running for 4.2)
+19-03-2025 00:49:40.284 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:49:40.291 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:49:40.334 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:49:40.335 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320180334000_0000_0bf6b90f9eb646e5ace88baeca8ee247#[API-BEGIN]
+19-03-2025 00:49:40.349 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320180334000_0000_0bf6b90f9eb646e5ace88baeca8ee247#BEGIN
+19-03-2025 00:49:40.356 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320180334000_0000_0bf6b90f9eb646e5ace88baeca8ee247#END
+19-03-2025 00:49:40.358 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742320180334000_0000_0bf6b90f9eb646e5ace88baeca8ee247##pushApiReqToQueue#Duration:23
+19-03-2025 00:49:40.851 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:49:40.851 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742320180334000_0000_0bf6b90f9eb646e5ace88baeca8ee247, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:49:40.851 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:49:40.862 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742320180334000_0000_0bf6b90f9eb646e5ace88baeca8ee247#saveResponse#Duration: 3
+19-03-2025 00:49:40.977 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320180334000_0000_0bf6b90f9eb646e5ace88baeca8ee247##END
+19-03-2025 00:49:40.977 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320180334000_0000_0bf6b90f9eb646e5ace88baeca8ee247#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=859, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=01, desc=Customer Not Found#CUST001))#Total time: 693
+19-03-2025 00:50:58.871 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 18056 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 00:50:58.872 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 00:50:58.872 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 00:51:01.572 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 00:51:02.560 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 4.318 seconds (JVM running for 5.643)
+19-03-2025 00:51:04.108 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:51:04.115 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:51:04.169 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:51:04.169 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320264169000_0000_75ce6afadc7247a881ebd38e848a1809#[API-BEGIN]
+19-03-2025 00:51:04.188 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320264169000_0000_75ce6afadc7247a881ebd38e848a1809#BEGIN
+19-03-2025 00:51:04.197 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320264169000_0000_75ce6afadc7247a881ebd38e848a1809#END
+19-03-2025 00:51:04.199 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742320264169000_0000_75ce6afadc7247a881ebd38e848a1809##pushApiReqToQueue#Duration:30
+19-03-2025 00:51:04.754 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:51:04.754 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742320264169000_0000_75ce6afadc7247a881ebd38e848a1809, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:51:04.754 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:52:49.964 ERROR --- [com.kaiasia.app.core.ProcessService     ] - 1742320264169000_0000_75ce6afadc7247a881ebd38e848a1809#Return timeout, because client get response at time over timeout value
+19-03-2025 00:52:49.965 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320264169000_0000_75ce6afadc7247a881ebd38e848a1809##END
+19-03-2025 00:52:49.966 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320264169000_0000_75ce6afadc7247a881ebd38e848a1809#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=998, desc=Timeout {0}))#Total time: 105858
+19-03-2025 00:52:49.967 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742320264169000_0000_75ce6afadc7247a881ebd38e848a1809#saveResponse#Duration: 6
+19-03-2025 00:52:49.973 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST003}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:52:49.973 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:52:49.978 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:52:49.979 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320369979000_0000_e69039b778c64c108deae5344aa6e273#[API-BEGIN]
+19-03-2025 00:52:49.979 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320369979000_0000_e69039b778c64c108deae5344aa6e273#BEGIN
+19-03-2025 00:52:49.982 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320369979000_0000_e69039b778c64c108deae5344aa6e273#END
+19-03-2025 00:52:49.983 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742320369979000_0000_e69039b778c64c108deae5344aa6e273##pushApiReqToQueue#Duration:4
+19-03-2025 00:52:50.467 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:52:50.467 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST003}, status=OK}, _reqId=1742320369979000_0000_e69039b778c64c108deae5344aa6e273, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:52:50.467 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:52:50.471 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742320369979000_0000_e69039b778c64c108deae5344aa6e273#saveResponse#Duration: 2
+19-03-2025 00:52:50.614 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320369979000_0000_e69039b778c64c108deae5344aa6e273##END
+19-03-2025 00:52:50.614 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320369979000_0000_e69039b778c64c108deae5344aa6e273#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=469, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=01, desc=Customer Not Found#CUST003))#Total time: 641
+19-03-2025 00:52:53.668 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 17304 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 00:52:53.669 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 00:52:53.670 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 00:52:56.317 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 00:52:57.202 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 4.109 seconds (JVM running for 5.309)
+19-03-2025 00:53:00.008 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST003}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:53:00.017 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:53:00.073 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:53:00.073 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320380073000_0000_2d6af77bc867434980ea600f308018bc#[API-BEGIN]
+19-03-2025 00:53:00.096 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320380073000_0000_2d6af77bc867434980ea600f308018bc#BEGIN
+19-03-2025 00:53:00.105 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320380073000_0000_2d6af77bc867434980ea600f308018bc#END
+19-03-2025 00:53:00.106 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742320380073000_0000_2d6af77bc867434980ea600f308018bc##pushApiReqToQueue#Duration:33
+19-03-2025 00:53:00.515 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:53:00.515 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST003}, status=OK}, _reqId=1742320380073000_0000_2d6af77bc867434980ea600f308018bc, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:53:00.515 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:54:29.057 ERROR --- [com.kaiasia.app.core.ProcessService     ] - 1742320380073000_0000_2d6af77bc867434980ea600f308018bc#Return timeout, because client get response at time over timeout value
+19-03-2025 00:54:29.057 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320380073000_0000_2d6af77bc867434980ea600f308018bc##END
+19-03-2025 00:54:29.057 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320380073000_0000_2d6af77bc867434980ea600f308018bc#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=998, desc=Timeout {0}))#Total time: 89049
+19-03-2025 00:54:29.068 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742320380073000_0000_2d6af77bc867434980ea600f308018bc#saveResponse#Duration: 11
+19-03-2025 00:57:31.320 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 13912 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 00:57:31.322 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 00:57:31.323 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 00:57:33.593 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 00:57:34.235 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.418 seconds (JVM running for 4.255)
+19-03-2025 00:57:48.896 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST003}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:57:48.902 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:57:48.949 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:57:48.949 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320668949000_0000_22b658231b6d4481bc8ac5732cedbc50#[API-BEGIN]
+19-03-2025 00:57:48.966 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320668949000_0000_22b658231b6d4481bc8ac5732cedbc50#BEGIN
+19-03-2025 00:57:48.972 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320668949000_0000_22b658231b6d4481bc8ac5732cedbc50#END
+19-03-2025 00:57:48.974 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742320668949000_0000_22b658231b6d4481bc8ac5732cedbc50##pushApiReqToQueue#Duration:25
+19-03-2025 00:57:49.336 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:57:49.336 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST003}, status=OK}, _reqId=1742320668949000_0000_22b658231b6d4481bc8ac5732cedbc50, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:57:49.336 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:57:49.348 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742320668949000_0000_22b658231b6d4481bc8ac5732cedbc50#saveResponse#Duration: 3
+19-03-2025 00:57:49.402 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320668949000_0000_22b658231b6d4481bc8ac5732cedbc50##END
+19-03-2025 00:57:49.402 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320668949000_0000_22b658231b6d4481bc8ac5732cedbc50#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=345, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=01, desc=Customer Not Found#CUST003))#Total time: 506
+19-03-2025 00:57:55.931 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:57:55.931 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:57:55.931 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 00:57:55.931 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320675931000_0000_d8a8e2358a764ab681d11f94cf08a9e7#[API-BEGIN]
+19-03-2025 00:57:55.932 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320675931000_0000_d8a8e2358a764ab681d11f94cf08a9e7#BEGIN
+19-03-2025 00:57:55.934 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742320675931000_0000_d8a8e2358a764ab681d11f94cf08a9e7#END
+19-03-2025 00:57:55.934 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742320675931000_0000_d8a8e2358a764ab681d11f94cf08a9e7##pushApiReqToQueue#Duration:2
+19-03-2025 00:57:56.422 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 00:57:56.423 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742320675931000_0000_d8a8e2358a764ab681d11f94cf08a9e7, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 00:57:56.423 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 00:57:56.435 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742320675931000_0000_d8a8e2358a764ab681d11f94cf08a9e7#saveResponse#Duration: 5
+19-03-2025 00:57:56.548 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320675931000_0000_d8a8e2358a764ab681d11f94cf08a9e7##END
+19-03-2025 00:57:56.548 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742320675931000_0000_d8a8e2358a764ab681d11f94cf08a9e7#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=430, priority=1, context=null, synasyn=false), body={enquiry={accounts=[{customerId=CUST001, accountType=CURRENT, shortName=Nguyễn Văn A, currency=VND, accountId=ACC001, altAccount=ACC1001, company=CO001, accountStatus=Active, shortTitle=Tài khoản tiết kiệm}]}, status=OK}, error=null)#Total time: 617
+19-03-2025 01:46:52.645 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 15804 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 01:46:52.646 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 01:46:52.647 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 01:46:55.102 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 2 classes with annotation SeabService
+19-03-2025 01:46:55.875 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.765 seconds (JVM running for 4.643)
+19-03-2025 01:46:58.039 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 01:46:58.046 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 01:46:58.092 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 01:46:58.092 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742323618092000_0000_333baa54193d4122a6bd750e19695a01#[API-BEGIN]
+19-03-2025 01:46:58.107 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742323618092000_0000_333baa54193d4122a6bd750e19695a01#BEGIN
+19-03-2025 01:46:58.115 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742323618092000_0000_333baa54193d4122a6bd750e19695a01#END
+19-03-2025 01:46:58.117 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742323618092000_0000_333baa54193d4122a6bd750e19695a01##pushApiReqToQueue#Duration:24
+19-03-2025 01:46:58.403 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 01:46:58.403 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742323618092000_0000_333baa54193d4122a6bd750e19695a01, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 01:46:58.403 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 01:46:58.425 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742323618092000_0000_333baa54193d4122a6bd750e19695a01#saveResponse#Duration: 7
+19-03-2025 01:46:58.546 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742323618092000_0000_333baa54193d4122a6bd750e19695a01##END
+19-03-2025 01:46:58.546 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742323618092000_0000_333baa54193d4122a6bd750e19695a01#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=418, priority=1, context=null, synasyn=false), body={enquiry={accounts=[{customerId=CUST001, accountType=CURRENT, shortName=Nguyễn Văn A, currency=VND, accountId=ACC001, altAccount=ACC1001, company=CO001, accountStatus=ACTIVE, shortTitle=Tài khoản tiết kiệm}, {customerId=CUST001, accountType=CURRENT, shortName=Nguyễn Văn A, currency=VND, accountId=ACC004, altAccount=ACC1004, company=CO001, accountStatus=ACTIVE, shortTitle=Tài khoản thanh toán}, {customerId=CUST001, accountType=CURRENT, shortName=Nguyễn Văn A, currency=USD, accountId=ACC005, altAccount=ACC1005, company=CO001, accountStatus=ACTIVE, shortTitle=Tài khoản đầu tư}]}, status=OK}, error=null)#Total time: 507
+19-03-2025 02:47:23.497 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 1212 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 02:47:23.500 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 02:47:23.500 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 02:47:26.509 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 10 classes with annotation SeabService
+19-03-2025 02:47:27.387 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 4.65 seconds (JVM running for 5.933)
+19-03-2025 02:50:55.701 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.USER.GET.INFO, username=EBK001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 02:50:55.712 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.USER.GET.INFO
+19-03-2025 02:50:55.730 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 02:50:55.730 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742327455730000_0000_a900d101276a4c049cc8c287d7b95e5a#[API-BEGIN]
+19-03-2025 02:50:55.751 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742327455730000_0000_a900d101276a4c049cc8c287d7b95e5a#BEGIN
+19-03-2025 02:50:55.765 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742327455730000_0000_a900d101276a4c049cc8c287d7b95e5a#END
+19-03-2025 02:50:55.767 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742327455730000_0000_a900d101276a4c049cc8c287d7b95e5a##pushApiReqToQueue#Duration:37
+19-03-2025 02:50:56.519 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 02:50:56.519 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.USER.GET.INFO, username=EBK001}, status=OK}, _reqId=1742327455730000_0000_a900d101276a4c049cc8c287d7b95e5a, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 02:50:56.520 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.USER.GET.INFO
+19-03-2025 02:50:56.567 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742327455730000_0000_a900d101276a4c049cc8c287d7b95e5a#saveResponse#Duration: 5
+19-03-2025 02:50:56.634 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742327455730000_0000_a900d101276a4c049cc8c287d7b95e5a##END
+19-03-2025 02:50:56.635 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742327455730000_0000_a900d101276a4c049cc8c287d7b95e5a#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=562, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=06, desc=Account Not Found#null))#Total time: 934
+19-03-2025 02:52:15.661 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 17712 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 02:52:15.663 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 02:52:15.664 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 02:52:19.625 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 10 classes with annotation SeabService
+19-03-2025 02:52:23.009 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 8.148 seconds (JVM running for 9.591)
+19-03-2025 02:52:25.950 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.USER.GET.INFO, username=EBK001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 02:52:25.969 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.USER.GET.INFO
+19-03-2025 02:52:26.017 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 02:52:26.017 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742327546017000_0000_030f87d1f21e4fdd903f8a55db134082#[API-BEGIN]
+19-03-2025 02:52:26.077 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742327546017000_0000_030f87d1f21e4fdd903f8a55db134082#BEGIN
+19-03-2025 02:52:26.098 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742327546017000_0000_030f87d1f21e4fdd903f8a55db134082#END
+19-03-2025 02:52:26.100 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742327546017000_0000_030f87d1f21e4fdd903f8a55db134082##pushApiReqToQueue#Duration:83
+19-03-2025 02:52:26.424 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 02:52:26.424 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.USER.GET.INFO, username=EBK001}, status=OK}, _reqId=1742327546017000_0000_030f87d1f21e4fdd903f8a55db134082, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 02:52:26.425 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.USER.GET.INFO
+19-03-2025 02:54:01.739 ERROR --- [com.kaiasia.app.core.ProcessService     ] - 1742327546017000_0000_030f87d1f21e4fdd903f8a55db134082#Return timeout, because client get response at time over timeout value
+19-03-2025 02:54:01.740 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742327546017000_0000_030f87d1f21e4fdd903f8a55db134082##END
+19-03-2025 02:54:01.741 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742327546017000_0000_030f87d1f21e4fdd903f8a55db134082#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=998, desc=Timeout {0}))#Total time: 95791
+19-03-2025 03:19:23.617 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742327546017000_0000_030f87d1f21e4fdd903f8a55db134082#saveResponse#Duration: 5
+19-03-2025 03:26:56.517 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 8968 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 03:26:56.519 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 03:26:56.519 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 03:26:59.261 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 10 classes with annotation SeabService
+19-03-2025 03:27:00.110 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 4.148 seconds (JVM running for 5.069)
+19-03-2025 03:27:02.378 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.USER.GET.INFO, username=EBK001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:27:02.385 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.USER.GET.INFO
+19-03-2025 03:27:02.400 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 03:27:02.400 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742329622400000_0000_3f1720f4ed9349daafcb332c03b8979c#[API-BEGIN]
+19-03-2025 03:27:02.419 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742329622400000_0000_3f1720f4ed9349daafcb332c03b8979c#BEGIN
+19-03-2025 03:27:02.429 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742329622400000_0000_3f1720f4ed9349daafcb332c03b8979c#END
+19-03-2025 03:27:02.431 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742329622400000_0000_3f1720f4ed9349daafcb332c03b8979c##pushApiReqToQueue#Duration:31
+19-03-2025 03:27:02.987 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 03:27:02.987 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.USER.GET.INFO, username=EBK001}, status=OK}, _reqId=1742329622400000_0000_3f1720f4ed9349daafcb332c03b8979c, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:27:02.987 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.USER.GET.INFO
+19-03-2025 03:27:03.014 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742329622400000_0000_3f1720f4ed9349daafcb332c03b8979c#saveResponse#Duration: 7
+19-03-2025 03:27:03.053 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742329622400000_0000_3f1720f4ed9349daafcb332c03b8979c##END
+19-03-2025 03:27:03.054 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742329622400000_0000_3f1720f4ed9349daafcb332c03b8979c#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=1007, priority=1, context=null, synasyn=false), body={enquiry={customerId=CUST001, customerType=Individual, name=Nguyễn Văn A, company=CO001, phone=0901234567, email=nva@example.com, mainAccount=ACC001, language=vi, pwDate=2025-06-01 00:00:00.0, userStatus=ACTIVE}, status=OK}, error=null)#Total time: 676
+19-03-2025 03:31:28.639 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.AUTHEN.GET.LOGIN, username=EBK001, password=hashedpass123}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:31:28.639 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.AUTHEN.GET.LOGIN
+19-03-2025 03:31:28.640 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 03:31:28.640 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742329888640000_0000_10345ba1547841d3a5177c9d88c415ca#[API-BEGIN]
+19-03-2025 03:31:28.640 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742329888640000_0000_10345ba1547841d3a5177c9d88c415ca#BEGIN
+19-03-2025 03:31:28.642 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742329888640000_0000_10345ba1547841d3a5177c9d88c415ca#END
+19-03-2025 03:31:28.643 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742329888640000_0000_10345ba1547841d3a5177c9d88c415ca##pushApiReqToQueue#Duration:3
+19-03-2025 03:31:29.053 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 03:31:29.053 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.AUTHEN.GET.LOGIN, username=EBK001, password=hashedpass123}, status=OK}, _reqId=1742329888640000_0000_10345ba1547841d3a5177c9d88c415ca, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:31:29.053 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.AUTHEN.GET.LOGIN
+19-03-2025 03:31:29.057 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742329888640000_0000_10345ba1547841d3a5177c9d88c415ca#saveResponse#Duration: 2
+19-03-2025 03:31:29.256 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742329888640000_0000_10345ba1547841d3a5177c9d88c415ca##END
+19-03-2025 03:31:29.256 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742329888640000_0000_10345ba1547841d3a5177c9d88c415ca#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=55, priority=1, context=null, synasyn=false), body={enquiry={packageUser=Individual, phone=0901234567, customerID=CUST001, customerName=Nguyễn Văn A, companyCode=CO001, username=EBK001, firstLogin=false}, status=OK}, error=null)#Total time: 617
+19-03-2025 03:33:13.148 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUST.GET.INFO, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:33:13.149 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUST.GET.INFO
+19-03-2025 03:33:13.149 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 03:33:13.149 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742329993149000_0000_2312343124aa40df894aaf6b44e5a490#[API-BEGIN]
+19-03-2025 03:33:13.150 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742329993149000_0000_2312343124aa40df894aaf6b44e5a490#BEGIN
+19-03-2025 03:33:13.152 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742329993149000_0000_2312343124aa40df894aaf6b44e5a490#END
+19-03-2025 03:33:13.152 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742329993149000_0000_2312343124aa40df894aaf6b44e5a490##pushApiReqToQueue#Duration:3
+19-03-2025 03:33:13.593 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 03:33:13.593 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUST.GET.INFO, customerId=CUST001}, status=OK}, _reqId=1742329993149000_0000_2312343124aa40df894aaf6b44e5a490, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:33:13.594 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUST.GET.INFO
+19-03-2025 03:33:13.603 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742329993149000_0000_2312343124aa40df894aaf6b44e5a490#saveResponse#Duration: 9
+19-03-2025 03:33:13.774 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742329993149000_0000_2312343124aa40df894aaf6b44e5a490##END
+19-03-2025 03:33:13.774 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742329993149000_0000_2312343124aa40df894aaf6b44e5a490#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=594, priority=1, context=null, synasyn=false), body={enquiry={id=CUST001, cifName=Nguyễn Văn A, legalId=2023-01-15 00:00:00, cifStatus=ACTIVE, language=vi, coCode=CO001, phone=0901234567, email=nva@example.com, country=Việt Nam, address=123 Đường A, TP.HCM, legalDocName=CMND, legalExpDate=2028-01-14T17:00:00.000+00:00, customerType=Individual}, status=OK}, error=null)#Total time: 626
+19-03-2025 03:40:13.398 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=VCB, transAmount=1000000.00, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:40:13.399 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.FT.PROCESS
+19-03-2025 03:40:13.401 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 09 MISSING FIELD#transAmount
+19-03-2025 03:40:25.783 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=300, transAmount=100000.00, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:40:25.783 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.FT.PROCESS
+19-03-2025 03:40:25.783 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 09 MISSING FIELD#transAmount
+19-03-2025 03:41:09.017 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=300, transAmount=100000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:41:09.018 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.FT.PROCESS
+19-03-2025 03:41:09.018 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 03:41:09.018 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330469018000_0000_25585c3db0a44e4f8fd2357bb65fc0fc#[API-BEGIN]
+19-03-2025 03:41:09.018 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330469018000_0000_25585c3db0a44e4f8fd2357bb65fc0fc#BEGIN
+19-03-2025 03:41:09.021 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330469018000_0000_25585c3db0a44e4f8fd2357bb65fc0fc#END
+19-03-2025 03:41:09.021 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742330469018000_0000_25585c3db0a44e4f8fd2357bb65fc0fc##pushApiReqToQueue#Duration:3
+19-03-2025 03:41:09.336 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 03:41:09.337 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=300, transAmount=100000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=1742330469018000_0000_25585c3db0a44e4f8fd2357bb65fc0fc, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:41:09.337 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.FT.PROCESS
+19-03-2025 03:41:09.381 ERROR --- [com.kaiasia.app.register.ServiceRegister] - {}
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.kaiasia.app.register.RequestProcessor.execute(RequestProcessor.java:27)
+	at com.kaiasia.app.register.ServiceRegister.processAuthenType(ServiceRegister.java:112)
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:52)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM "fund_transfer" WHERE transaction_id = ? ]; nested exception is org.postgresql.util.PSQLException: ERROR: column "transaction_id" does not exist
+  Position: 37
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:101)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:738)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:794)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:209)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper.querySingle(PosgrestDAOHelper.java:71)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$FastClassBySpringCGLIB$$c8fbc219.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$EnhancerBySpringCGLIB$$1ac552b9.querySingle(<generated>)
+	at com.kaiasia.app.repository.FundTransferDAO.getByTokenKey(FundTransferDAO.java:23)
+	at com.kaiasia.app.repository.DBService.processFTInside(DBService.java:64)
+	at com.kaiasia.app.repository.DBService$$FastClassBySpringCGLIB$$1759c2de.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.kaiasia.app.repository.DBService$$EnhancerBySpringCGLIB$$73e70d19.processFTInside(<generated>)
+	at com.kaiasia.app.service.T24Service.GetProcessFT.process(GetProcessFT.java:73)
+	... 13 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: column "transaction_id" does not exist
+  Position: 37
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:119)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:722)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 44 common frames omitted
+19-03-2025 03:41:09.381 ERROR --- [com.kaiasia.app.core.ProcessImpl        ] - {}
+java.lang.NullPointerException: null
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:59)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19-03-2025 03:41:09.383 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742330469018000_0000_25585c3db0a44e4f8fd2357bb65fc0fc#saveResponse#Duration: 2
+19-03-2025 03:41:09.432 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330469018000_0000_25585c3db0a44e4f8fd2357bb65fc0fc##END
+19-03-2025 03:41:09.432 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330469018000_0000_25585c3db0a44e4f8fd2357bb65fc0fc#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=381, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=999, desc=Internal Server Error java.lang.NullPointerException))#Total time: 415
+19-03-2025 03:41:20.939 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 9812 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 03:41:20.941 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 03:41:20.942 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 03:41:23.223 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 10 classes with annotation SeabService
+19-03-2025 03:41:23.886 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.418 seconds (JVM running for 4.229)
+19-03-2025 03:41:26.555 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=300, transAmount=100000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:41:26.563 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.FT.PROCESS
+19-03-2025 03:41:26.576 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 03:41:26.577 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330486577000_0000_58de15c579ce49069c71994c418e4152#[API-BEGIN]
+19-03-2025 03:41:26.589 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330486577000_0000_58de15c579ce49069c71994c418e4152#BEGIN
+19-03-2025 03:41:26.599 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330486577000_0000_58de15c579ce49069c71994c418e4152#END
+19-03-2025 03:41:26.601 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742330486577000_0000_58de15c579ce49069c71994c418e4152##pushApiReqToQueue#Duration:24
+19-03-2025 03:41:26.920 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 03:41:26.920 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=300, transAmount=100000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=1742330486577000_0000_58de15c579ce49069c71994c418e4152, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:41:26.920 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.FT.PROCESS
+19-03-2025 03:41:26.967 ERROR --- [com.kaiasia.app.register.ServiceRegister] - {}
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.kaiasia.app.register.RequestProcessor.execute(RequestProcessor.java:27)
+	at com.kaiasia.app.register.ServiceRegister.processAuthenType(ServiceRegister.java:112)
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:52)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM "fund_transfer" WHERE transaction_id = ? ]; nested exception is org.postgresql.util.PSQLException: ERROR: column "transaction_id" does not exist
+  Position: 37
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:101)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:738)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:794)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:209)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper.querySingle(PosgrestDAOHelper.java:71)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$FastClassBySpringCGLIB$$c8fbc219.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$EnhancerBySpringCGLIB$$1ac552b9.querySingle(<generated>)
+	at com.kaiasia.app.repository.FundTransferDAO.getByTokenKey(FundTransferDAO.java:23)
+	at com.kaiasia.app.repository.DBService.processFTInside(DBService.java:64)
+	at com.kaiasia.app.repository.DBService$$FastClassBySpringCGLIB$$1759c2de.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:388)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.kaiasia.app.repository.DBService$$EnhancerBySpringCGLIB$$73e70d19.processFTInside(<generated>)
+	at com.kaiasia.app.service.T24Service.GetProcessFT.process(GetProcessFT.java:73)
+	... 13 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: column "transaction_id" does not exist
+  Position: 37
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:119)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:722)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 44 common frames omitted
+19-03-2025 03:41:26.967 ERROR --- [com.kaiasia.app.core.ProcessImpl        ] - {}
+java.lang.NullPointerException: null
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:59)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19-03-2025 03:41:26.971 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742330486577000_0000_58de15c579ce49069c71994c418e4152#saveResponse#Duration: 4
+19-03-2025 03:41:27.018 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330486577000_0000_58de15c579ce49069c71994c418e4152##END
+19-03-2025 03:41:27.018 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330486577000_0000_58de15c579ce49069c71994c418e4152#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=-33, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=999, desc=Internal Server Error java.lang.NullPointerException))#Total time: 463
+19-03-2025 03:42:31.588 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 18064 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 03:42:31.590 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 03:42:31.591 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 03:42:33.862 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 10 classes with annotation SeabService
+19-03-2025 03:42:34.544 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.43 seconds (JVM running for 4.404)
+19-03-2025 03:42:41.718 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=300, transAmount=100000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:42:41.724 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.FT.PROCESS
+19-03-2025 03:42:41.736 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 03:42:41.736 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330561736000_0000_27a398447a8d4ec9b1f8f33b4977ea28#[API-BEGIN]
+19-03-2025 03:42:41.751 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330561736000_0000_27a398447a8d4ec9b1f8f33b4977ea28#BEGIN
+19-03-2025 03:42:41.757 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330561736000_0000_27a398447a8d4ec9b1f8f33b4977ea28#END
+19-03-2025 03:42:41.759 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742330561736000_0000_27a398447a8d4ec9b1f8f33b4977ea28##pushApiReqToQueue#Duration:23
+19-03-2025 03:42:42.113 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 03:42:42.114 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=300, transAmount=100000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=1742330561736000_0000_27a398447a8d4ec9b1f8f33b4977ea28, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:42:42.114 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.FT.PROCESS
+19-03-2025 03:42:42.126 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742330561736000_0000_27a398447a8d4ec9b1f8f33b4977ea28#saveResponse#Duration: 4
+19-03-2025 03:42:42.181 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330561736000_0000_27a398447a8d4ec9b1f8f33b4977ea28##END
+19-03-2025 03:42:42.181 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330561736000_0000_27a398447a8d4ec9b1f8f33b4977ea28#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=122, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=11, desc=Duplicate Transaction))#Total time: 463
+19-03-2025 03:43:10.758 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=VCB, transAmount=100000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:43:10.758 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.FT.PROCESS
+19-03-2025 03:43:10.759 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 03:43:10.759 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330590759000_0000_a5862c034b454ceb92ef36953d491ce2#[API-BEGIN]
+19-03-2025 03:43:10.759 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330590759000_0000_a5862c034b454ceb92ef36953d491ce2#BEGIN
+19-03-2025 03:43:10.762 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330590759000_0000_a5862c034b454ceb92ef36953d491ce2#END
+19-03-2025 03:43:10.763 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742330590759000_0000_a5862c034b454ceb92ef36953d491ce2##pushApiReqToQueue#Duration:4
+19-03-2025 03:43:11.078 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 03:43:11.079 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=VCB, transAmount=100000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=1742330590759000_0000_a5862c034b454ceb92ef36953d491ce2, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:43:11.079 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.FT.PROCESS
+19-03-2025 03:43:11.082 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742330590759000_0000_a5862c034b454ceb92ef36953d491ce2#saveResponse#Duration: 1
+19-03-2025 03:43:11.187 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330590759000_0000_a5862c034b454ceb92ef36953d491ce2##END
+19-03-2025 03:43:11.187 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330590759000_0000_a5862c034b454ceb92ef36953d491ce2#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=81, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=11, desc=Duplicate Transaction))#Total time: 429
+19-03-2025 03:44:38.970 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=300, transAmount=1000000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:44:38.970 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.FT.PROCESS
+19-03-2025 03:44:38.970 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 03:44:38.970 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330678970000_0000_f9b30bb23e1f48d582e83c9e11617f21#[API-BEGIN]
+19-03-2025 03:44:38.971 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330678970000_0000_f9b30bb23e1f48d582e83c9e11617f21#BEGIN
+19-03-2025 03:44:38.974 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742330678970000_0000_f9b30bb23e1f48d582e83c9e11617f21#END
+19-03-2025 03:44:38.974 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742330678970000_0000_f9b30bb23e1f48d582e83c9e11617f21##pushApiReqToQueue#Duration:4
+19-03-2025 03:44:39.465 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 03:44:39.465 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_TRANSACTION, status=OK, transaction={authenType=KAI.API.FT.PROCESS, transactionId=FT001, debitAccount=ACC1001, creditAccount=ACC1002, bankId=300, transAmount=1000000, transDesc=Chuyển tiền cá nhân, company=VN100001, channel=MOBILE}}, _reqId=1742330678970000_0000_f9b30bb23e1f48d582e83c9e11617f21, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 03:44:39.465 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.FT.PROCESS
+19-03-2025 03:44:39.468 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742330678970000_0000_f9b30bb23e1f48d582e83c9e11617f21#saveResponse#Duration: 1
+19-03-2025 03:44:39.592 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330678970000_0000_f9b30bb23e1f48d582e83c9e11617f21##END
+19-03-2025 03:44:39.592 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742330678970000_0000_f9b30bb23e1f48d582e83c9e11617f21#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=467, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=11, desc=Duplicate Transaction))#Total time: 622
+19-03-2025 15:24:13.904 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 14304 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 15:24:13.909 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 15:24:13.912 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 15:24:19.265 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 10 classes with annotation SeabService
+19-03-2025 15:24:20.878 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 7.915 seconds (JVM running for 9.491)
+19-03-2025 15:24:51.036 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 15:24:51.042 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 15:24:51.090 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 15:24:51.091 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742372691091000_0000_88bb70e291244788bf177248b13cadd3#[API-BEGIN]
+19-03-2025 15:24:51.106 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742372691091000_0000_88bb70e291244788bf177248b13cadd3#BEGIN
+19-03-2025 15:24:51.115 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742372691091000_0000_88bb70e291244788bf177248b13cadd3#END
+19-03-2025 15:24:51.117 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742372691091000_0000_88bb70e291244788bf177248b13cadd3##pushApiReqToQueue#Duration:26
+19-03-2025 15:24:51.428 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 15:24:51.428 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742372691091000_0000_88bb70e291244788bf177248b13cadd3, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 15:24:51.428 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 15:24:51.485 ERROR --- [com.kaiasia.app.register.ServiceRegister] - {}
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.kaiasia.app.register.RequestProcessor.execute(RequestProcessor.java:27)
+	at com.kaiasia.app.register.ServiceRegister.processAuthenType(ServiceRegister.java:112)
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:52)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM "account" WHERE cif_id = ? ]; nested exception is org.postgresql.util.PSQLException: ERROR: column "cif_id" does not exist
+  Hint: Perhaps you meant to reference the column "account.cifid".
+  Position: 31
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:101)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:738)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:794)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:209)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper.query(PosgrestDAOHelper.java:91)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$FastClassBySpringCGLIB$$c8fbc219.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$EnhancerBySpringCGLIB$$1ac552b9.query(<generated>)
+	at com.kaiasia.app.repository.AccountDAO.findAllByCustomerId(AccountDAO.java:30)
+	at com.kaiasia.app.repository.DBService.findAllByCustomerId(DBService.java:45)
+	at com.kaiasia.app.repository.DBService$$FastClassBySpringCGLIB$$1759c2de.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at com.kaiasia.app.repository.DBService$$EnhancerBySpringCGLIB$$73e70d19.findAllByCustomerId(<generated>)
+	at com.kaiasia.app.service.T24Service.GetAccByCustomerId.process(GetAccByCustomerId.java:90)
+	... 13 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: column "cif_id" does not exist
+  Hint: Perhaps you meant to reference the column "account.cifid".
+  Position: 31
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:119)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:722)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 38 common frames omitted
+19-03-2025 15:24:51.486 ERROR --- [com.kaiasia.app.core.ProcessImpl        ] - {}
+java.lang.NullPointerException: null
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:59)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19-03-2025 15:24:51.490 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742372691091000_0000_88bb70e291244788bf177248b13cadd3#saveResponse#Duration: 4
+19-03-2025 15:24:51.539 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742372691091000_0000_88bb70e291244788bf177248b13cadd3##END
+19-03-2025 15:24:51.539 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742372691091000_0000_88bb70e291244788bf177248b13cadd3#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=486, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=999, desc=Internal Server Error java.lang.NullPointerException))#Total time: 503
+19-03-2025 15:25:21.962 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.ACCOUNT.GET.INFO, accountId=ACC001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 15:25:21.963 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.ACCOUNT.GET.INFO
+19-03-2025 15:25:21.971 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 15:25:21.971 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742372721971000_0000_dc5b9ba2812740cf855905511f9906ea#[API-BEGIN]
+19-03-2025 15:25:21.971 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742372721971000_0000_dc5b9ba2812740cf855905511f9906ea#BEGIN
+19-03-2025 15:25:21.974 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742372721971000_0000_dc5b9ba2812740cf855905511f9906ea#END
+19-03-2025 15:25:21.975 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742372721971000_0000_dc5b9ba2812740cf855905511f9906ea##pushApiReqToQueue#Duration:4
+19-03-2025 15:25:22.255 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 15:25:22.256 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.ACCOUNT.GET.INFO, accountId=ACC001}, status=OK}, _reqId=1742372721971000_0000_dc5b9ba2812740cf855905511f9906ea, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 15:25:22.256 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.ACCOUNT.GET.INFO
+19-03-2025 15:25:22.268 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742372721971000_0000_dc5b9ba2812740cf855905511f9906ea#saveResponse#Duration: 8
+19-03-2025 15:25:22.398 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742372721971000_0000_dc5b9ba2812740cf855905511f9906ea##END
+19-03-2025 15:25:22.398 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742372721971000_0000_dc5b9ba2812740cf855905511f9906ea#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=260, priority=1, context=null, synasyn=false), body={enquiry={customerId=CUST001, accountType=CURRENT, shortName=Nguyễn Văn A, currency=VND, accountId=ACC001, altAccount=ACC1001, category=Savings, company=CO001, productCode=SAV01, accountStatus=ACTIVE, shortTitle=Tài khoản tiết kiệm, avaiBalance=5000000.5}, status=OK}, error=null)#Total time: 436
+19-03-2025 15:25:30.565 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 15:25:30.566 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 15:25:30.566 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 15:25:30.566 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742372730566000_0000_35215beb586f4a648048910d0abea83c#[API-BEGIN]
+19-03-2025 15:25:30.566 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742372730566000_0000_35215beb586f4a648048910d0abea83c#BEGIN
+19-03-2025 15:25:30.568 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742372730566000_0000_35215beb586f4a648048910d0abea83c#END
+19-03-2025 15:25:30.569 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742372730566000_0000_35215beb586f4a648048910d0abea83c##pushApiReqToQueue#Duration:3
+19-03-2025 15:25:30.838 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 15:25:30.838 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=CUST001}, status=OK}, _reqId=1742372730566000_0000_35215beb586f4a648048910d0abea83c, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 15:25:30.838 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 15:25:30.840 ERROR --- [com.kaiasia.app.register.ServiceRegister] - {}
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.kaiasia.app.register.RequestProcessor.execute(RequestProcessor.java:27)
+	at com.kaiasia.app.register.ServiceRegister.processAuthenType(ServiceRegister.java:112)
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:52)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM "account" WHERE cif_id = ? ]; nested exception is org.postgresql.util.PSQLException: ERROR: column "cif_id" does not exist
+  Hint: Perhaps you meant to reference the column "account.cifid".
+  Position: 31
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:101)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:79)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:738)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:794)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:209)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper.query(PosgrestDAOHelper.java:91)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$FastClassBySpringCGLIB$$c8fbc219.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$EnhancerBySpringCGLIB$$1ac552b9.query(<generated>)
+	at com.kaiasia.app.repository.AccountDAO.findAllByCustomerId(AccountDAO.java:30)
+	at com.kaiasia.app.repository.DBService.findAllByCustomerId(DBService.java:45)
+	at com.kaiasia.app.repository.DBService$$FastClassBySpringCGLIB$$1759c2de.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at com.kaiasia.app.repository.DBService$$EnhancerBySpringCGLIB$$73e70d19.findAllByCustomerId(<generated>)
+	at com.kaiasia.app.service.T24Service.GetAccByCustomerId.process(GetAccByCustomerId.java:90)
+	... 13 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: column "cif_id" does not exist
+  Hint: Perhaps you meant to reference the column "account.cifid".
+  Position: 31
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:119)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:722)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 38 common frames omitted
+19-03-2025 15:25:30.841 ERROR --- [com.kaiasia.app.core.ProcessImpl        ] - {}
+java.lang.NullPointerException: null
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:59)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19-03-2025 15:25:30.842 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742372730566000_0000_35215beb586f4a648048910d0abea83c#saveResponse#Duration: 1
+19-03-2025 15:25:30.981 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742372730566000_0000_35215beb586f4a648048910d0abea83c##END
+19-03-2025 15:25:30.981 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742372730566000_0000_35215beb586f4a648048910d0abea83c#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=-159, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=999, desc=Internal Server Error java.lang.NullPointerException))#Total time: 416
+19-03-2025 15:26:16.629 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 9400 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 15:26:16.632 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 15:26:16.632 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 15:26:50.774 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 11400 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 15:26:50.776 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 15:26:50.777 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 15:28:37.847 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 12548 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 15:28:37.849 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 15:28:37.850 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 15:29:58.384 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 17708 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 15:29:58.386 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 15:29:58.386 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 15:30:00.673 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 10 classes with annotation SeabService
+19-03-2025 15:30:01.321 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.37 seconds (JVM running for 4.146)
+19-03-2025 16:15:14.389 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 12316 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 16:15:14.391 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 16:15:14.392 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 16:15:16.897 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 10 classes with annotation SeabService
+19-03-2025 16:15:17.695 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.82 seconds (JVM running for 4.667)
+19-03-2025 16:16:38.751 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=281692}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 16:16:38.758 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUSTOMER.GET.ACC
+19-03-2025 16:16:38.804 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 16:16:38.804 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742375798804000_0000_8fcc151fefc9488b85f47f016cafad3b#[API-BEGIN]
+19-03-2025 16:16:38.820 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742375798804000_0000_8fcc151fefc9488b85f47f016cafad3b#BEGIN
+19-03-2025 16:16:38.826 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742375798804000_0000_8fcc151fefc9488b85f47f016cafad3b#END
+19-03-2025 16:16:38.828 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742375798804000_0000_8fcc151fefc9488b85f47f016cafad3b##pushApiReqToQueue#Duration:24
+19-03-2025 16:16:39.365 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 16:16:39.365 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUSTOMER.GET.ACC, customerId=281692}, status=OK}, _reqId=1742375798804000_0000_8fcc151fefc9488b85f47f016cafad3b, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 16:16:39.365 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUSTOMER.GET.ACC
+19-03-2025 16:16:39.409 ERROR --- [com.kaiasia.app.register.ServiceRegister] - {}
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.kaiasia.app.register.RequestProcessor.execute(RequestProcessor.java:27)
+	at com.kaiasia.app.register.ServiceRegister.processAuthenType(ServiceRegister.java:112)
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:52)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM "customer" WHERE id = ? ]; nested exception is org.postgresql.util.PSQLException: ERROR: relation "customer" does not exist
+  Position: 15
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:738)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:794)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:209)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper.querySingle(PosgrestDAOHelper.java:71)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$FastClassBySpringCGLIB$$c8fbc219.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$EnhancerBySpringCGLIB$$4fe7b77d.querySingle(<generated>)
+	at com.kaiasia.app.repository.CustomerDAO.getByCusId(CustomerDAO.java:23)
+	at com.kaiasia.app.repository.DBService.getCustomerById(DBService.java:41)
+	at com.kaiasia.app.repository.DBService$$FastClassBySpringCGLIB$$1759c2de.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at com.kaiasia.app.repository.DBService$$EnhancerBySpringCGLIB$$5fb52635.getCustomerById(<generated>)
+	at com.kaiasia.app.service.T24Service.GetAccByCustomerId.process(GetAccByCustomerId.java:87)
+	... 13 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "customer" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:119)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:722)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 38 common frames omitted
+19-03-2025 16:16:39.410 ERROR --- [com.kaiasia.app.core.ProcessImpl        ] - {}
+java.lang.NullPointerException: null
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:59)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19-03-2025 16:16:39.415 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742375798804000_0000_8fcc151fefc9488b85f47f016cafad3b#saveResponse#Duration: 5
+19-03-2025 16:16:39.460 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742375798804000_0000_8fcc151fefc9488b85f47f016cafad3b##END
+19-03-2025 16:16:39.460 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742375798804000_0000_8fcc151fefc9488b85f47f016cafad3b#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=410, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=999, desc=Internal Server Error java.lang.NullPointerException))#Total time: 709
+19-03-2025 16:16:58.198 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUST.GET.INFO, customerId=281692}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 16:16:58.199 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUST.GET.INFO
+19-03-2025 16:16:58.199 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 16:16:58.199 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742375818199000_0000_c44d67d6476d4309bf43ca13df885e06#[API-BEGIN]
+19-03-2025 16:16:58.200 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742375818199000_0000_c44d67d6476d4309bf43ca13df885e06#BEGIN
+19-03-2025 16:16:58.202 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742375818199000_0000_c44d67d6476d4309bf43ca13df885e06#END
+19-03-2025 16:16:58.202 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742375818199000_0000_c44d67d6476d4309bf43ca13df885e06##pushApiReqToQueue#Duration:3
+19-03-2025 16:16:58.552 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 16:16:58.552 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUST.GET.INFO, customerId=281692}, status=OK}, _reqId=1742375818199000_0000_c44d67d6476d4309bf43ca13df885e06, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 16:16:58.552 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUST.GET.INFO
+19-03-2025 16:16:58.553 ERROR --- [com.kaiasia.app.register.ServiceRegister] - {}
+java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.kaiasia.app.register.RequestProcessor.execute(RequestProcessor.java:27)
+	at com.kaiasia.app.register.ServiceRegister.processAuthenType(ServiceRegister.java:112)
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:52)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT * FROM "customer" WHERE id = ? ]; nested exception is org.postgresql.util.PSQLException: ERROR: relation "customer" does not exist
+  Position: 15
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:239)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:70)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1541)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:713)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:738)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:794)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:209)
+	at org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate.query(NamedParameterJdbcTemplate.java:216)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper.querySingle(PosgrestDAOHelper.java:71)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$FastClassBySpringCGLIB$$c8fbc219.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.invokeJoinpoint(CglibAopProxy.java:793)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186)
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:763)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:708)
+	at com.kaiasia.app.core.dao.PosgrestDAOHelper$$EnhancerBySpringCGLIB$$4fe7b77d.querySingle(<generated>)
+	at com.kaiasia.app.repository.CustomerDAO.getByCusId(CustomerDAO.java:23)
+	at com.kaiasia.app.repository.DBService.getCustomerById(DBService.java:41)
+	at com.kaiasia.app.repository.DBService$$FastClassBySpringCGLIB$$1759c2de.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invoke(MethodProxy.java:218)
+	at org.springframework.aop.framework.CglibAopProxy.invokeMethod(CglibAopProxy.java:386)
+	at org.springframework.aop.framework.CglibAopProxy.access$000(CglibAopProxy.java:85)
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:704)
+	at com.kaiasia.app.repository.DBService$$EnhancerBySpringCGLIB$$5fb52635.getCustomerById(<generated>)
+	at com.kaiasia.app.service.T24Service.GetCustomerInfo.process(GetCustomerInfo.java:44)
+	... 13 common frames omitted
+Caused by: org.postgresql.util.PSQLException: ERROR: relation "customer" does not exist
+  Position: 15
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:490)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:408)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:167)
+	at org.postgresql.jdbc.PgPreparedStatement.executeQuery(PgPreparedStatement.java:119)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeQuery(ProxyPreparedStatement.java:52)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeQuery(HikariProxyPreparedStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1.doInPreparedStatement(JdbcTemplate.java:722)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:651)
+	... 38 common frames omitted
+19-03-2025 16:16:58.554 ERROR --- [com.kaiasia.app.core.ProcessImpl        ] - {}
+java.lang.NullPointerException: null
+	at com.kaiasia.app.core.ProcessImpl.process(ProcessImpl.java:59)
+	at com.kaiasia.app.core.ProcessThread.process(ProcessThread.java:81)
+	at com.kaiasia.app.core.job.ApiResTask.execute(ApiResTask.java:25)
+	at com.kaiasia.app.core.async.KaiTask.run(KaiTask.java:26)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+19-03-2025 16:16:58.555 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742375818199000_0000_c44d67d6476d4309bf43ca13df885e06#saveResponse#Duration: 1
+19-03-2025 16:16:58.615 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742375818199000_0000_c44d67d6476d4309bf43ca13df885e06##END
+19-03-2025 16:16:58.615 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742375818199000_0000_c44d67d6476d4309bf43ca13df885e06#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=554, priority=1, context=null, synasyn=false), body={status=FAILE}, error=ApiError(code=999, desc=Internal Server Error java.lang.NullPointerException))#Total time: 417
+19-03-2025 16:18:13.897 INFO  --- [com.kaiasia.app.AppApplication          ] - Starting AppApplication using Java 1.8.0_191 on DESKTOP-RJMUS47 with PID 16396 (D:\TT\Bank\t24_api\target\classes started by Truong in D:\TT\Bank\t24_api)
+19-03-2025 16:18:13.899 DEBUG --- [com.kaiasia.app.AppApplication          ] - Running with Spring Boot v2.7.2, Spring v5.3.22
+19-03-2025 16:18:13.900 INFO  --- [com.kaiasia.app.AppApplication          ] - No active profile set, falling back to 1 default profile: "default"
+19-03-2025 16:18:16.423 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Found 10 classes with annotation SeabService
+19-03-2025 16:18:17.114 INFO  --- [com.kaiasia.app.AppApplication          ] - Started AppApplication in 3.811 seconds (JVM running for 5.228)
+19-03-2025 16:18:21.394 INFO  --- [com.kaiasia.app.core.MainRestController ] - MsgFromClient_Receive:ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUST.GET.INFO, customerId=281692}, status=OK}, _reqId=null, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 16:18:21.401 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method validate for AuthenType: VALIDATE_KAI.API.CUST.GET.INFO
+19-03-2025 16:18:21.411 INFO  --- [com.kaiasia.app.core.ValidateImpl       ] - 000 OK
+19-03-2025 16:18:21.412 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742375901411000_0000_24db6350ada641a8a6eac2a424dc98ab#[API-BEGIN]
+19-03-2025 16:18:21.425 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742375901411000_0000_24db6350ada641a8a6eac2a424dc98ab#BEGIN
+19-03-2025 16:18:21.433 INFO  --- [com.kaiasia.app.core.dao.APIDaoManager  ] - InsertAPIReqs()1742375901411000_0000_24db6350ada641a8a6eac2a424dc98ab#END
+19-03-2025 16:18:21.434 INFO  --- [com.kaiasia.app.core.ProcessService     ] - 1742375901411000_0000_24db6350ada641a8a6eac2a424dc98ab##pushApiReqToQueue#Duration:22
+19-03-2025 16:18:21.606 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - checkTimeInQueue: 0
+19-03-2025 16:18:21.606 DEBUG --- [com.kaiasia.app.core.ProcessImpl        ] - received msg: ApiRequest(header=ApiHeader(reqType=REQUEST, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=null, priority=1, context=null, synasyn=false), body={command=GET_ENQUIRY, enquiry={authenType=KAI.API.CUST.GET.INFO, customerId=281692}, status=OK}, _reqId=1742375901411000_0000_24db6350ada641a8a6eac2a424dc98ab, _rejectCounter=null, _sendTime=null, _command=null, _authenType=null, _timeOut=null)
+19-03-2025 16:18:21.606 DEBUG --- [com.kaiasia.app.register.ServiceRegister] - Execute method AuthenType: KAI.API.CUST.GET.INFO
+19-03-2025 16:18:21.617 INFO  --- [com.kaiasia.app.core.ProcessThread      ] - 1742375901411000_0000_24db6350ada641a8a6eac2a424dc98ab#saveResponse#Duration: 4
+19-03-2025 16:18:21.655 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742375901411000_0000_24db6350ada641a8a6eac2a424dc98ab##END
+19-03-2025 16:18:21.655 INFO  --- [com.kaiasia.app.core.MainRestController ] - 1742375901411000_0000_24db6350ada641a8a6eac2a424dc98ab#MsgFromClient_Response:ApiResponse(header=ApiHeader(reqType=RESPONSE, api=T24_API, apiKey=VDI0X1VUSUxfQVBJ, channel=API, location=PC/IOS, requestAPI=FE API, requestNode=node 01, duration=613, priority=1, context=null, synasyn=false), body={enquiry={id=281692, cifName=Vu Van Phai, legalId=00121235478, cifStatus=ACTIVE, language=VN, coCode=VN100001, phone=0123456789, email=phai.vu@gmail.com, country=VN, address=Hai Duong, legalDocName=CCCD, legalExpDate=null, customerType=IND}, status=OK}, error=null)#Total time: 261
