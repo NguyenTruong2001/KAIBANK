@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:context="http://www.springframework.org/schema/context"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	   xmlns:util="http://www.springframework.org/schema/util" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
     http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
     
     http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
@@ -19,16 +19,20 @@
 		<property name="apiRequestDao" ref="apiRequestDAO" />
 		<property name="apiResponseDAO" ref="apiResponseDAO" />
 	</bean>
-	<bean id="t24UtilClient" class="ms.apiclient.t24util.T24UtilClient">
-			<property name="url" value="${dep-api.t24utilsApi.url}" />
-		<property name="apiKey" value="${dep-api.t24utilsApi.apiKey}" />
-		<property name="apiName" value="${dep-api.t24utilsApi.apiName}" />
-		<property name="apiTimeout" value="${dep-api.t24utilsApi.timeout}" />
+
+	<bean id="ebankDAO" class="com.kaiasia.app.repository.TransactionDAO">
+		<property name="tableName" value="${dbinfo.transaction}" />
 	</bean>
-	<bean id="authenClient" class="ms.apiclient.authen.AuthenClient">
-		<property name="url" value="${dep-api.auth-api.url}"/>
-		<property name="apiKey" value="${dep-api.auth-api.apiKey}"/>
-		<property name="apiName" value="${dep-api.auth-api.apiName}"/>
-		<property name="apiTimeout" value="${dep-api.auth-api.timeout}"/>
-	</bean>
+	<!--	<bean id="customerDAO" class="com.kaiasia.app.repository.CustomerDAO">-->
+	<!--		<property name="tableName" value="${dbinfo.customer}" />-->
+	<!--	</bean>-->
+	<!--	<bean id="accountDAO" class="com.kaiasia.app.repository.AccountDAO">-->
+	<!--		<property name="tableName" value="${dbinfo.account}" />-->
+	<!--	</bean>-->
+	<!--	<bean id="fundTransferDAO" class="com.kaiasia.app.repository.TransactionDAO">-->
+	<!--		<property name="tableName" value="${dbinfo.fund_transfer}" />-->
+	<!--	</bean>-->
+	<!--	<bean id="banksDAO" class="com.kaiasia.app.repository.BanksDAO">-->
+	<!--		<property name="tableName" value="${dbinfo.banks}" />-->
+	<!--	</bean>-->
 </beans>
