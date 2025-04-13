@@ -1,0 +1,70 @@
+server:
+  servlet:
+    contextPath: /ACCOUNT_API
+  port: 8089
+kai:
+  name: ACCOUNT_API
+  key: accountq51klfoni1ezxl5f2ckpfx248
+  threadName: ACCOUNT_API
+  pollSize: 100
+  error:
+    code996: "Error insert request to DB#{0}"
+    code997: "Cannot be processed"
+    code998: "Timeout {0}"
+    code999: "Internal Server Error {0}"
+    code801: "Request type not valid"
+    code802: "Problem with calculating timeout or sendtime in request type 'response'"
+    code803: "RequestId not exist"
+    code804: "Request lacks valid information: {0}"
+    code805: "Problem with command in request type 'request'"
+    code700: "API key not exists"
+    code701: "API not exist"
+    code600: "Problem in mapper object"
+    code501: "Failed to insert to the database#{0}"
+    code502: "Failed to update to the database#{0}"
+    code503: "Failed to read from the database#{0}"
+    code504: "Failed to delete from the database#{0}"
+    code505: "Failed to call api#{0}"
+    code333: "Don't have method validate for AuthenType"
+spring:
+  application:
+    name: KAIASIA_ACCOUNT
+  config:
+    import: optional:file:application.yml
+  database:
+    postgres: true
+  redis:
+    host: 103.57.222.76
+    port: 6379
+    timeout: 5000
+  postgredatasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://103.57.222.76:5432/doantotnghiep?currentSchema=account_api
+    username: postgres
+    password: 123456
+    maximum-pool-size: 50
+    idleTimeout: 120000
+    minimumIdle: 10
+  jpa:
+    show-sql: false
+    open-in-view: false
+
+dbinfo:
+  apiRequest: request_in
+  apiResponse: request_out
+dep-api:
+  auth-api:
+    apiName: AUTH_API
+    url: http://103.57.222.76:8087/AUTH_API/process
+    timeout: 60000
+    apiKey: authq51klfoni1ezxl5f2ckpfx248
+  t24utilsApi:
+    apiName: T24_API
+    url: http://103.57.222.76:8082/T24_API/process
+    timeout: 60000
+    apiKey: VDI0X1VUSUxfQVBJ
+#logging:
+#  file:
+#    name: erro.log
+#  level:
+#    root: error
