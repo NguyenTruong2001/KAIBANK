@@ -10,10 +10,10 @@
         <!-- lookup parent from repository -->
     </parent>
     <groupId>com.kaiasia</groupId>
-    <artifactId>app</artifactId>
-    <version>20241210</version>
-    <name>app</name>
-    <description>Funds Transfer Api</description>
+    <artifactId>ACCOUNT_API</artifactId>
+    <version>20250411</version>
+    <name>ACCOUNT_API</name>
+    <description>Account Api</description>
     <properties>
         <java.version>1.8</java.version>
         <start-class>com.kaiasia.app.AppApplication</start-class>
