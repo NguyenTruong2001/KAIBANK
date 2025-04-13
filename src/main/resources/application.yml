@@ -34,14 +34,14 @@ spring:
   database:
     postgres: true
   redis:
-    host: 14.225.254.212
+    host: 103.57.222.76
     port: 6379
     timeout: 5000
   postgredatasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://14.225.254.212:5432/KAI_API?currentSchema=customerinfo_api
-    username: custinfo_api
-    password: custinfo@kaiasia
+    url: jdbc:postgresql://103.57.222.76:5432/doantotnghiep?currentSchema=customer_api
+    username: postgres
+    password: 123456
     maximum-pool-size: 50
     idleTimeout: 120000
     minimumIdle: 10
@@ -55,12 +55,12 @@ dbinfo:
 dep-api:
   auth-api:
     apiName: AUTH_API
-    url: http://14.225.254.212:8087/AUTH_API/process
+    url: http://103.57.222.76:8087/AUTH_API/process
     timeout: 60000
     apiKey: authq51klfoni1ezxl5f2ckpfx248
   t24utilsApi:
-    apiName: T24_UTIL_API
-    url: http://14.225.254.212:8082/T24_UTIL_API/process
+    apiName: T24_API
+    url: http://103.57.222.76:8082/T24_API/process
     timeout: 60000
     apiKey: VDI0X1VUSUxfQVBJ
 #logging:

@@ -10,9 +10,9 @@
         <!-- lookup parent from repository -->
     </parent>
     <groupId>com.kaiasia</groupId>
-    <artifactId>app</artifactId>
-    <version>20241209</version>
-    <name>app</name>
+    <artifactId>CUSTOMER_API</artifactId>
+    <version>20250411</version>
+    <name>CUSTOMER_API</name>
     <description>CUSTOMER API</description>
     <properties>
         <java.version>1.8</java.version>
