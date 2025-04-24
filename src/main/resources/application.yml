@@ -1,0 +1,31 @@
+server:
+  port: -1
+spring:
+  kafka:
+#    bootstrap-servers: 103.57.222.76:9092
+#    ## Kafka server configuration
+    consumer:
+      group-id: otp_group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      auto-offset-reset: earliest
+      bootstrap-servers: 103.57.222.76:9092
+  # Mail
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nguyentruong272001@gmail.com
+    password: owlf gmpe etal kvae
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+        debug: true
+
+kafka:
+  consumer:
+    topic: getOTP
+    group-id: otp_group
